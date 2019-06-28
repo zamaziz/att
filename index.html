@@ -23,15 +23,61 @@
     </ul>
     <h1> Drop-down </h1>
     <h2> Select box </h2>
+    <select id="select box" name ="select box">
+        <option> Banana </option>
+        <option selected> Cherry </option>
+        <option> Lemon </option>
+    </select>
+    <br>
+    
+    <p> Select group w/ optgroup tag and selected attribute </p> 
+    <select id="groups" name="groups">
+      <optgroup label="fruits">
+        <option>Banana</option>
+        <option selected>Cherry</option>
+        <option>Lemon</option>
+      </optgroup>
+      <optgroup label="vegetables">
+        <option>Carrot</option>
+        <option>Eggplant</option>
+        <option>Potato</option>
+     </optgroup>
+    </select>
 
     <h2> Multiple choice select box </h2>
+    <p> By default, a select box only lets the user select a single value. By adding the multiple attribute to the element, you can allow users to select several values, by using the default mechanism provided by the OS </p>
+
+    <select multiple id="multi" name="multi">
+      <option>Banana</option>
+      <option>Cherry</option>
+      <option>Lemon</option>
+    </select>
 
     <h2> Autocomplete box </h2>
+
+    <label for="myFruit">What's your favorite fruit?</label>
+    <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+    <datalist id="mySuggestion">
+      <option>Apple</option>
+      <option>Banana</option>
+      <option>Blackberry</option>
+      <option>Blueberry</option>
+      <option>Lemon</option>
+      <option>Lychee</option>
+      <option>Peach</option>
+      <option>Pear</option>
+    </datalist>
 
     <h1> Checkable items </h1>
 
     <h2> Check box </h2>
-
+    <p>What is this year?</p>
+    <p><input type="checkbox" name="a" value="1417"> 1417</p>
+    <p><input type="checkbox" name="a" value="1680" checked> 1680</p>
+    <p><input type="checkbox" name="a" value="1883" checked> 1883</p>
+    <p><input type="checkbox" name="a" value="1934"> 1934</p>
+    <p><input type="checkbox" name="a" value="2010"> 2010</p>
+    
     <h2> Radio button </h2>
 
     <h1> Buttons </h1>
